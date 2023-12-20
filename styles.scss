@@ -1,5 +1,5 @@
 // cells
-$cellSize: 10px;
+$cellSize: 6px;
 $cellSizeMobile: 3px;
 
 // colours 
@@ -126,7 +126,7 @@ body {
         font-family: 'Press Start 2P', sans-serif;
         color: $red100;
         margin: 0;
-        font-size: 3rem;
+        font-size: 2rem;
 
         @media (max-width: 600px) {
           font-size: 1rem;
