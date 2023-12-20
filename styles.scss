@@ -1,0 +1,202 @@
+// cells
+$cellSize: 10px;
+$cellSizeMobile: 3px;
+
+// colours 
+$red100: #9d303b;
+$red200: #3e2137;
+$red300: #1f0e1c;
+
+$green100: #1f9224;
+$green200: #104913;
+$green300: #072709;
+
+$lightPhase1: #6a95a7;
+$lightPhase2: #925153;
+$lightPhase3: #825e93;
+$lightPhase4: #bb9f7d;
+
+@keyframes colorShift1 {
+  0% {
+    background-color: $lightPhase1;
+  }
+  25% {
+    background-color: $lightPhase2;
+  }
+  50% {
+    background-color: $lightPhase3;
+  }
+  75% {
+    background-color: $lightPhase4;
+  }
+  100% {
+    background-color: $lightPhase1;
+  }
+}
+
+@keyframes colorShift2 {
+  0% {
+    background-color: $lightPhase2;
+  }
+  25% {
+    background-color: $lightPhase1;
+  }
+  50% {
+    background-color: $lightPhase4;
+  }
+  75% {
+    background-color: $lightPhase3;
+  }
+  100% {
+    background-color: $lightPhase2;
+  }
+}
+
+@keyframes colorShift3 {
+  0% {
+    background-color: $lightPhase3;
+  }
+  25% {
+    background-color: $lightPhase2;
+  }
+  50% {
+    background-color: $lightPhase4;
+  }
+  75% {
+    background-color: $lightPhase1;
+  }
+  100% {
+    background-color: $lightPhase3;
+  }
+}
+
+@keyframes colorShift4 {
+  0% {
+    background-color: $lightPhase4;
+  }
+  25% {
+    background-color: $lightPhase1;
+  }
+  50% {
+    background-color: $lightPhase4;
+  }
+  75% {
+    background-color: $lightPhase2;
+  }
+  100% {
+    background-color: $lightPhase4;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #252627;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  flex-direction: column;
+
+  .frame {
+    padding: 40px 40px 0 40px;
+    background-color: #ffffff;
+
+    @media (max-width: 600px) {
+      padding: 10px 10px 0 10px;
+    }
+
+    .label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 40px;
+
+      @media (max-width: 600px) {
+        padding: 10px;
+      }
+    
+      h1 {
+        font-family: 'Press Start 2P', sans-serif;
+        color: $red100;
+        margin: 0;
+        font-size: 3rem;
+
+        @media (max-width: 600px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+table {
+  border-collapse: collapse;
+  height: calc(100 * $cellSize); // yes i used calc() for this, oops :P (its so i could mess with the grid size easily)
+  width: calc(100 * $cellSize);
+  margin: 0;
+  padding: 0;
+  background-color: #252627;
+
+  @media (max-width: 600px) {
+    height: calc(100 * $cellSizeMobile);
+    width: calc(100 * $cellSizeMobile);
+  }
+
+  tr {
+    margin: 0;
+    padding: 0;
+    
+    td {
+      height: $cellSize;
+      width: $cellSize;
+      margin: 0;
+      padding: 0;
+
+      @media (max-width: 600px) {
+        height: $cellSizeMobile;
+        width: $cellSizeMobile;
+      }
+    }
+  }
+}
+
+.red100 {
+  background-color: $red100;
+}
+.red200 {
+  background-color: $red200;
+}
+.red300 {
+  background-color: $red300;
+}
+
+.green100 {
+  background-color: $green100;
+}
+.green200 {
+  background-color: $green200;
+}
+.green300 {
+  background-color: $green300;
+}
+
+.lightType1 {
+  animation: colorShift1 2s infinite;
+}
+.lightType2 {
+  animation: colorShift2 2s infinite;
+}
+.lightType3 {
+  animation: colorShift3 2s infinite;
+}
+.lightType4 {
+  animation: colorShift4 2s infinite;
+}

@@ -1,0 +1,273 @@
+@-webkit-keyframes colorShift1 {
+  0% {
+    background-color: #6a95a7;
+  }
+  25% {
+    background-color: #925153;
+  }
+  50% {
+    background-color: #825e93;
+  }
+  75% {
+    background-color: #bb9f7d;
+  }
+  100% {
+    background-color: #6a95a7;
+  }
+}
+@keyframes colorShift1 {
+  0% {
+    background-color: #6a95a7;
+  }
+  25% {
+    background-color: #925153;
+  }
+  50% {
+    background-color: #825e93;
+  }
+  75% {
+    background-color: #bb9f7d;
+  }
+  100% {
+    background-color: #6a95a7;
+  }
+}
+@-webkit-keyframes colorShift2 {
+  0% {
+    background-color: #925153;
+  }
+  25% {
+    background-color: #6a95a7;
+  }
+  50% {
+    background-color: #bb9f7d;
+  }
+  75% {
+    background-color: #825e93;
+  }
+  100% {
+    background-color: #925153;
+  }
+}
+@keyframes colorShift2 {
+  0% {
+    background-color: #925153;
+  }
+  25% {
+    background-color: #6a95a7;
+  }
+  50% {
+    background-color: #bb9f7d;
+  }
+  75% {
+    background-color: #825e93;
+  }
+  100% {
+    background-color: #925153;
+  }
+}
+@-webkit-keyframes colorShift3 {
+  0% {
+    background-color: #825e93;
+  }
+  25% {
+    background-color: #925153;
+  }
+  50% {
+    background-color: #bb9f7d;
+  }
+  75% {
+    background-color: #6a95a7;
+  }
+  100% {
+    background-color: #825e93;
+  }
+}
+@keyframes colorShift3 {
+  0% {
+    background-color: #825e93;
+  }
+  25% {
+    background-color: #925153;
+  }
+  50% {
+    background-color: #bb9f7d;
+  }
+  75% {
+    background-color: #6a95a7;
+  }
+  100% {
+    background-color: #825e93;
+  }
+}
+@-webkit-keyframes colorShift4 {
+  0% {
+    background-color: #bb9f7d;
+  }
+  25% {
+    background-color: #6a95a7;
+  }
+  50% {
+    background-color: #bb9f7d;
+  }
+  75% {
+    background-color: #925153;
+  }
+  100% {
+    background-color: #bb9f7d;
+  }
+}
+@keyframes colorShift4 {
+  0% {
+    background-color: #bb9f7d;
+  }
+  25% {
+    background-color: #6a95a7;
+  }
+  50% {
+    background-color: #bb9f7d;
+  }
+  75% {
+    background-color: #925153;
+  }
+  100% {
+    background-color: #bb9f7d;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #252627;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container .frame {
+  padding: 40px 40px 0 40px;
+  background-color: #ffffff;
+}
+@media (max-width: 600px) {
+  .container .frame {
+    padding: 10px 10px 0 10px;
+  }
+}
+.container .frame .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  padding: 40px;
+}
+@media (max-width: 600px) {
+  .container .frame .label {
+    padding: 10px;
+  }
+}
+.container .frame .label h1 {
+  font-family: "Press Start 2P", sans-serif;
+  color: #9d303b;
+  margin: 0;
+  font-size: 3rem;
+}
+@media (max-width: 600px) {
+  .container .frame .label h1 {
+    font-size: 1rem;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  height: calc(100 * $cellSize);
+  width: calc(100 * $cellSize);
+  margin: 0;
+  padding: 0;
+  background-color: #252627;
+}
+@media (max-width: 600px) {
+  table {
+    height: calc(100 * $cellSizeMobile);
+    width: calc(100 * $cellSizeMobile);
+  }
+}
+table tr {
+  margin: 0;
+  padding: 0;
+}
+table tr td {
+  height: 10px;
+  width: 10px;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 600px) {
+  table tr td {
+    height: 3px;
+    width: 3px;
+  }
+}
+
+.red100 {
+  background-color: #9d303b;
+}
+
+.red200 {
+  background-color: #3e2137;
+}
+
+.red300 {
+  background-color: #1f0e1c;
+}
+
+.green100 {
+  background-color: #1f9224;
+}
+
+.green200 {
+  background-color: #104913;
+}
+
+.green300 {
+  background-color: #072709;
+}
+
+.lightType1 {
+  -webkit-animation: colorShift1 2s infinite;
+          animation: colorShift1 2s infinite;
+}
+
+.lightType2 {
+  -webkit-animation: colorShift2 2s infinite;
+          animation: colorShift2 2s infinite;
+}
+
+.lightType3 {
+  -webkit-animation: colorShift3 2s infinite;
+          animation: colorShift3 2s infinite;
+}
+
+.lightType4 {
+  -webkit-animation: colorShift4 2s infinite;
+          animation: colorShift4 2s infinite;
+}
